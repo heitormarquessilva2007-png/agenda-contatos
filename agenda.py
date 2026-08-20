@@ -13,7 +13,6 @@ def cadastrar_contato():
 
 
 def listar_contatos():
-    
     if not contatos:
         print("Nenhum contato cadastrado.")
         return
@@ -22,7 +21,12 @@ def listar_contatos():
 
 
 def buscar_contato():
-    pass
+    nome = input("Digite o nome do contato que deseja buscar: ")
+    for contato in contatos:
+        if contato["nome"] == nome:
+            print(f"Contato encontrado: {contato['nome']} - {contato['telefone']} - {contato['email']}")
+            return
+    print("Contato não encontrado.")
 
 
 def remover_contato():
