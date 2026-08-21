@@ -21,12 +21,7 @@ def listar_contatos():
 
 
 def buscar_contato():
-    nome = input("Digite o nome do contato que deseja buscar: ")
-    for contato in contatos:
-        if contato["nome"] == nome:
-            print(f"Contato encontrado: {contato['nome']} - {contato['telefone']} - {contato['email']}")
-            return
-    print("Contato não encontrado.")
+    pass
 
 
 def remover_contato():
